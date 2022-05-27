@@ -27,6 +27,311 @@
       <div class="reveal">
          <div class="slides">
             <!--work------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+            <!--WEEK 8 -------->
+            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
+               <div>
+                  <h1>Design Tools For Web3D/XR</h1>
+                  <h3>Week 8 - Introduction to Shaders with AFRAME</h3>
+                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
+               </div>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 8 - AFRAME & 3D assets
+               </h3>
+               <h4>GLTF and GLB</h4>
+               <p style="text-align: center; color:white; ">  GLB is the binary file format representation of 3D models saved in the GL Transmission Format (glTF) </p>
+               <img src="asset/2020-core-gltf-2-0-asset-structure.jpg"></img>
+            </section>
+            <!--TASK-------->
+            <section data-background-iframe="https://damskii-seriously-effect-chain.glitch.me/" data-background-interactive>
+               <h3 style="">
+                  <span class="element">Week 7 - Task</span>
+               </h3>
+               <p style="text-align: left; "> 1. Use your browser to open the URL: https://glitch.com/~damskii-seriously-effect-chain and select REMIX to make your own copy</p>
+               <p style="text-align: left; "> 2. Modify the current effects  </p>
+               <p style="text-align: left; "> 3. Add Effects to the chain </p>
+               <a href="https://glitch.com/~damskii-seriously-effect-chain" target="_blank">https://glitch.com/~damskii-seriously-effect-chain</a>
+            </section>
+            <section>
+               <h3>
+                  Thank you - see you next time (谢谢)
+               </h3>
+               <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
+            </section>
+            <!--end work---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+            <!-- INIT-->
+            <div id="perma-footer" class="footer">
+               <!--   <img height="128" width="128" src="asset/presqrcode.png"></img>-->
+               <span class="element">Design Tools For Web3D/XR</span>
+               <span class="element">
+               <a id="url" href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" >https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a>
+               </span>
+               <span class="element">
+               <a id="seturl" href="" target="_blank">begin</a>
+               </span>
+            </div>
+            <!--work-------->
+            <!--INTRODUCTION  -->
+            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
+               <div>
+                  <h1>Design Tools For Web3D/XR</h1>
+                  <p>Dr. Damian Hills </p>
+               </div>
+               <p style="text-align: centre; color:white; "> </p>
+               <p style="text-align: centre; color:white; "> </p>
+               <p style="text-align: centre; color:white; "> </p>
+               <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
+            </section>
+            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
+               <div>
+                  <h1>Design Tools For Web3D/XR</h1>
+                  <h3>About the course</h3>
+                  <p style="text-align: left; color:white; ">This course will introduce a series of web based design tools for displaying and generating 3D content for online delivery using Web3D standards. </p>
+                  <p style="text-align: left; color:white; ">These design tools allow the student to create online browser experiences to be displayed in 3D and also WebXR immersive delivery platforms for both AR and VR. </p>
+               </div>
+            </section>
+            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
+               <div>
+                  <h1>Design Tools For Web3D/XR</h1>
+                  <h3>Week 1 - Introduction to Web3D / Web XR</h3>
+                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
+               </div>
+            </section>
+            <!--overview-------->
+            <section data-background-iframe="https://threejs.org/examples/webgl_gpgpu_birds_gltf.html" data-background-interactive>
+               <h3 style="color:black; ">
+                  Week 1 - Overview
+               </h3>
+               <p style="text-align: left; color:black; "><span>&#8226;</span> What is Web3D and WebXR</p>
+               <p style="text-align: left; color:black; "><span>&#8226;</span> Tools for Web3D/XR you can use online to create your own experiences </p>
+            </section>
+            <!--what-------->
+            <section data-background-iframe="https://threejs.org/examples/webgl_loader_gltf_variants.html" data-background-interactive>
+               <h3 style="color:white; ">
+                  What is Web3D?
+               </h3>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> term used to describe interactive 3D content included in an HTML page</p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> viewable by a common Web browser via a special 3D viewer </p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> open formats for 3D viewing transmission, such as glTF</p>
+            </section>
+            <!--what-------->
+            <section data-background-iframe="https://threejs.org/examples/webxr_vr_rollercoaster.html" data-background-interactive>
+               <h3 style="color:black; ">
+                  What is the WebXR standard?
+               </h3>
+               <p style="text-align: left; color:black; "><span>&#8226;</span> is a group of standards which are used together to support rendering 3D scenes to hardware designed for presenting VR/AR</p>
+               <p style="text-align: left; color:black; "><span>&#8226;</span> It builds upon a set of browser based technologies that include the WebGL standard that supports 3D rendering in browser environments. </p>
+               <p style="text-align: left; color:black; "><span>&#8226;</span> supports a range of mixed reality devices with an enabled browser, such as the Oculus browser for the Quest. </p>
+            </section>
+            <!-- why-------->
+            <section data-background-iframe="https://threejs.org/examples/webgl_shaders_ocean.html" data-background-interactive>
+               <h3 style="">
+                  Why web tools for 3D/XR
+               </h3>
+               <p style="text-align: left;  "><span>&#8226;</span> Designers and Developers make websites that are easy to maintain
+               </p>
+               <p style="text-align: left;  "><span>&#8226;</span> Interoperability of online tools allow for interesting combinations of techniques
+               </p>
+               <p style="text-align: left;  "><span>&#8226;</span> Content you create is useful is many web contexts
+               </p>
+            </section>
+            <!-- progressive -->
+            <!--what re the tools-------->
+            <section data-background-iframe="https://threejs.org/examples/webgl_panorama_equirectangular.html" data-background-interactive>
+               <h3 style="">
+                  Overview of Web Tools
+               </h3>
+               <p style="text-align: left;  "><span>&#8226;</span> aframe - web framework for building XR experiences</p>
+               <p style="text-align: left; "><span>&#8226;</span> glitch - browser based project management </p>
+            </section>
+            <!-- glitch intro---------------------------------------------->
+            <section data-background-iframe="https://aframe.io/" data-background-interactive>
+            </section>
+            <section>
+               <h3>Glitch.com - AFRAME</h3>
+               <p style="text-align: left; "><span>&#8226;</span> <a href="https://glitch.com/edit/#!/remix/aframe" target="_blank">Aframe on Glitch</a></p>
+            </section>
+            <section>
+               <h3>Glitch.com - "Project Management"</h3>
+               <img height="50%" width="50%s" src="asset/glitch.png"></img>
+               <p style="text-align: left; "><span>&#8226;</span> <a href="https://glitch.com/about" target="_blank">Glitch.com</a></p>
+               <p style="text-align: left; "><span>&#8226;</span> <a href="https://glitch.com/~aframe" target="_blank">Aframe on Glitch</a></p>
+            </section>
+            <section>
+               <h3>Glitch.com - "Remix a project"</h3>
+               <img src="asset/remix.png"></img>
+            </section>
+            <section>
+               <h3>Glitch.com - "Show next to code"</h3>
+               <img src="asset/glitchnextcode.png"></img>
+            </section>
+            <section>
+               <h3>Glitch.com - "Demo Project"</h3>
+               <img height="50%" width="50%s" src="asset/glitch.png"></img>
+               <p style="text-align: left; "> Demo : <a href="https://damskii-aframe-xr-gltf.glitch.me/" target="_blank">https://damskii-aframe-xr-gltf.glitch.me/</a></p>
+               <p style="text-align: left; "> Demo (project): <a href="https://glitch.com/~damskii-aframe-xr-gltf" target="_blank">https://glitch.com/~damskii-aframe-xr-gltf</a></p>
+               <p style="text-align: left; ">On IOS? <a href="https://apps.apple.com/us/app/webxr-viewer/id1295998056" target="_blank">Get viewer app for WebXR</a></p>
+            </section>
+            <!-------------------------------------------------------------------------->
+            <!--what re the tools-------->
+            <section data-background-iframe="https://threejs.org/examples/webgl_panorama_equirectangular.html" data-background-interactive>
+               <h3 style="">
+                  <span class="element">Week 1 - Task</span>
+               </h3>
+               <p style="text-align: left;  "> 1. create account for glitch.com</p>
+               <p style="text-align: left; "> 2. open your browser and the aframe starter project : https://glitch.com/~aframe </p>
+               <p style="text-align: left; "> 3. 'remix' this project and make your own copy </p>
+               <p style="text-align: left; "> 4. edit some of the aframe markup and change the sizes and positions of the objects</p>
+            </section>
+            <section>
+               <h3>
+                  Thank you - see you next time (谢谢)
+               </h3>
+               <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
+            </section>
+            <!--WEEK 2 -------->
+            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
+               <div>
+                  <h1>Design Tools For Web3D/XR</h1>
+                  <h3>Week 2 - AFRAME introduction</h3>
+                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
+               </div>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 2 - AFRAME introduction
+               </h3>
+               <h4>Overview</h4>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> provides easy-to-use HTML elements for starters called primitives.</p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> show how to modify basic meshes through HTML attributes </p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> to learn how to change colors, positions, rotations, scale</p>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 2 - AFRAME introduction
+               </h3>
+               <h4>Primitives</h4>
+               <img height="50%" width="50%s" src="asset/w2/hellowebvr.jpg"></img>
+               <img height="50%" width="50%s" src="asset/w2/hellowebvr2.jpg"></img>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 2 - AFRAME introduction
+               </h3>
+               <h4>Position</h4>
+               <p style="text-align: left; color:white; "></p>
+               <img height="50%" width="50%s" src="asset/w2/hellowebvr2.jpg"></img></p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> Position defines where objects are in 3D space (X, Y, Z) in meters.</p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> Change the position of the objects via the position HTML attribute values.</p>
+               <a  href="https://aframe.io/docs/master/components/position.html" target="_blank">AFRAME documentation - position</a>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 2 - AFRAME introduction
+               </h3>
+               <h4>Rotation</h4>
+               <p style="text-align: left; color:white; "></p>
+               <img height="50%" width="50%s" src="asset/w2/hellowebvr2.jpg"></img></p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> Rotation defines orientation of objects in 3D space (about the X, Y, Z axes) in degrees</p>
+               <a  href="https://aframe.io/docs/master/components/rotation.html" target="_blank">AFRAME documentation - rotation</a>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 2 - AFRAME introduction
+               </h3>
+               <h4>Adding Primitives</h4>
+               <img height="50%" width="50%s" src="asset/w2/hellowebvr2.jpg"></img>
+               <p style="text-align: center; color:white; ">  Add primitives the scene by adding HTML elements under 'a-scene' </p>
+               <a  href="https://aframe.io/docs/0.5.0/introduction/html-and-primitives.html" target="_blank">AFRAME documentation - primitives</a>
+            </section>
+            <!--what re the tools-------->
+            <section data-background-iframe="https://threejs.org/examples/webgl_materials_envmaps.html" data-background-interactive>
+               <h3 style="">
+                  <span class="element">Week 2 - Task</span>
+               </h3>
+               <p style="text-align: left;  "> 1. got to aframe.io and click GET STARTED</p>
+               <p style="text-align: left; "> 2. select 'remix the starter example on Glitch' link to open the link : https://glitch.com/~aframe </p>
+               <p style="text-align: left; "> 3. select 'remix your own' to create your own copy </p>
+               <p style="text-align: left; "> 4. change the 'position' and 'rotation' and 'color' values of each of the primitives to create your own scene </p>
+               <p style="text-align: left; "> 4. add other primitives by copying any of the primitives eg 'a-box' </p>
+            </section>
+            <section>
+               <h3>
+                  Thank you - see you next time (谢谢)
+               </h3>
+               <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
+            </section>
+            <!--WEEK 3 -------->
+            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
+               <div>
+                  <h1>Design Tools For Web3D/XR</h1>
+                  <h3>Week 3 - Rendering a 360 image in AFRAME</h3>
+                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
+               </div>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 3 - AFRAME Rendering a 360 image
+               </h3>
+               <h4>Remix the example on Glitch</h4>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> Use your browser to open the URL: https://glitch.com/~damskii-aframe-360</p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> Select REMIX YOUR OWN on the bottom right hand side</p>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 3 - AFRAME Rendering a 360 image
+               </h3>
+               <h4>Get a 360 image</h4>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> One you have created</p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> Or download from a free site - eg. https://pixexid.com/search/360</p>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 3 - AFRAME Rendering a 360 image
+               </h3>
+               <h4>Uploading the ASSET to Glitch</h4>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> Within the GLITCH example, select the ASSETS tab and UPLOAD AN ASSET.</p>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 3 - AFRAME Rendering a 360 image
+               </h3>
+               <h4>Select the URL for the ASSET</h4>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> In the ASSETS tab, click once on the preview image </p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> In the bottom left side, select COPY URL </p>
+            </section>
+            <section>
+               <h3 style="color:white; ">
+                  Week 3 - AFRAME Rendering a 360 image
+               </h3>
+               <h4>Select the URL to the index.html file</h4>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> look for the 'a-sky' primitive on like 14. </p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> in the 'src' field, delete existing link between the quotes "" </p>
+               <p style="text-align: left; color:white; "><span>&#8226;</span> between the quotes "" paste the URL from your clipboard</p>
+            </section>
+            <!--TASK-------->
+            <section data-background-iframe="https://threejs.org/examples/webgl_materials_envmaps.html" data-background-interactive>
+               <h3 style="">
+                  <span class="element">Week 3 - Task</span>
+               </h3>
+               <p style="text-align: left;  "> 1. Use your browser to open the URL: https://glitch.com/~damskii-aframe-360</p>
+               <p style="text-align: left; "> 2. Within the GLITCH example, select the ASSETS tab and UPLOAD AN ASSET. </p>
+               <p style="text-align: left; "> 3. In the ASSETS tab, click once on the preview image and select COPY URL</p>
+               <p style="text-align: left; "> 4. look for the 'a-sky' primitive on line 14, in the 'src' field, delete existing link between the quotes "" </p>
+               <p style="text-align: left; "> 5. between the quotes of the 'a-sky' src "" paste the URL from your clipboard </p>
+            </section>
+            <section>
+               <h3>
+                  Thank you - see you next time (谢谢)
+               </h3>
+               <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
+            </section>
+
             <!--WEEK 4-------->
             <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
                <div>
@@ -361,288 +666,10 @@
                </h3>
                <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
             </section>
-            <!--WEEK 8 -------->
-            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
-               <div>
-                  <h1>Design Tools For Web3D/XR</h1>
-                  <h3>Week 8 - Introduction to Shaders with AFRAME</h3>
-                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
-               </div>
-            </section>
-            <section>
-               <h3>
-                  Thank you - see you next time (谢谢)
-               </h3>
-               <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
-            </section>
-            <!--end work---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-            <!-- INIT-->
-            <div id="perma-footer" class="footer">
-               <!--   <img height="128" width="128" src="asset/presqrcode.png"></img>-->
-               <span class="element">Design Tools For Web3D/XR</span>
-               <span class="element">
-               <a id="url" href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" >https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a>
-               </span>
-               <span class="element">
-               <a id="seturl" href="" target="_blank">begin</a>
-               </span>
-            </div>
-            <!--work-------->
-            <!--INTRODUCTION  -->
-            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
-               <div>
-                  <h1>Design Tools For Web3D/XR</h1>
-                  <p>Dr. Damian Hills </p>
-               </div>
-               <p style="text-align: centre; color:white; "> </p>
-               <p style="text-align: centre; color:white; "> </p>
-               <p style="text-align: centre; color:white; "> </p>
-               <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
-            </section>
-            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
-               <div>
-                  <h1>Design Tools For Web3D/XR</h1>
-                  <h3>About the course</h3>
-                  <p style="text-align: left; color:white; ">This course will introduce a series of web based design tools for displaying and generating 3D content for online delivery using Web3D standards. </p>
-                  <p style="text-align: left; color:white; ">These design tools allow the student to create online browser experiences to be displayed in 3D and also WebXR immersive delivery platforms for both AR and VR. </p>
-               </div>
-            </section>
-            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
-               <div>
-                  <h1>Design Tools For Web3D/XR</h1>
-                  <h3>Week 1 - Introduction to Web3D / Web XR</h3>
-                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
-               </div>
-            </section>
-            <!--overview-------->
-            <section data-background-iframe="https://threejs.org/examples/webgl_gpgpu_birds_gltf.html" data-background-interactive>
-               <h3 style="color:black; ">
-                  Week 1 - Overview
-               </h3>
-               <p style="text-align: left; color:black; "><span>&#8226;</span> What is Web3D and WebXR</p>
-               <p style="text-align: left; color:black; "><span>&#8226;</span> Tools for Web3D/XR you can use online to create your own experiences </p>
-            </section>
-            <!--what-------->
-            <section data-background-iframe="https://threejs.org/examples/webgl_loader_gltf_variants.html" data-background-interactive>
-               <h3 style="color:white; ">
-                  What is Web3D?
-               </h3>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> term used to describe interactive 3D content included in an HTML page</p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> viewable by a common Web browser via a special 3D viewer </p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> open formats for 3D viewing transmission, such as glTF</p>
-            </section>
-            <!--what-------->
-            <section data-background-iframe="https://threejs.org/examples/webxr_vr_rollercoaster.html" data-background-interactive>
-               <h3 style="color:black; ">
-                  What is the WebXR standard?
-               </h3>
-               <p style="text-align: left; color:black; "><span>&#8226;</span> is a group of standards which are used together to support rendering 3D scenes to hardware designed for presenting VR/AR</p>
-               <p style="text-align: left; color:black; "><span>&#8226;</span> It builds upon a set of browser based technologies that include the WebGL standard that supports 3D rendering in browser environments. </p>
-               <p style="text-align: left; color:black; "><span>&#8226;</span> supports a range of mixed reality devices with an enabled browser, such as the Oculus browser for the Quest. </p>
-            </section>
-            <!-- why-------->
-            <section data-background-iframe="https://threejs.org/examples/webgl_shaders_ocean.html" data-background-interactive>
-               <h3 style="">
-                  Why web tools for 3D/XR
-               </h3>
-               <p style="text-align: left;  "><span>&#8226;</span> Designers and Developers make websites that are easy to maintain
-               </p>
-               <p style="text-align: left;  "><span>&#8226;</span> Interoperability of online tools allow for interesting combinations of techniques
-               </p>
-               <p style="text-align: left;  "><span>&#8226;</span> Content you create is useful is many web contexts
-               </p>
-            </section>
-            <!-- progressive -->
-            <!--what re the tools-------->
-            <section data-background-iframe="https://threejs.org/examples/webgl_panorama_equirectangular.html" data-background-interactive>
-               <h3 style="">
-                  Overview of Web Tools
-               </h3>
-               <p style="text-align: left;  "><span>&#8226;</span> aframe - web framework for building XR experiences</p>
-               <p style="text-align: left; "><span>&#8226;</span> glitch - browser based project management </p>
-            </section>
-            <!-- glitch intro---------------------------------------------->
-            <section data-background-iframe="https://aframe.io/" data-background-interactive>
-            </section>
-            <section>
-               <h3>Glitch.com - AFRAME</h3>
-               <p style="text-align: left; "><span>&#8226;</span> <a href="https://glitch.com/edit/#!/remix/aframe" target="_blank">Aframe on Glitch</a></p>
-            </section>
-            <section>
-               <h3>Glitch.com - "Project Management"</h3>
-               <img height="50%" width="50%s" src="asset/glitch.png"></img>
-               <p style="text-align: left; "><span>&#8226;</span> <a href="https://glitch.com/about" target="_blank">Glitch.com</a></p>
-               <p style="text-align: left; "><span>&#8226;</span> <a href="https://glitch.com/~aframe" target="_blank">Aframe on Glitch</a></p>
-            </section>
-            <section>
-               <h3>Glitch.com - "Remix a project"</h3>
-               <img src="asset/remix.png"></img>
-            </section>
-            <section>
-               <h3>Glitch.com - "Show next to code"</h3>
-               <img src="asset/glitchnextcode.png"></img>
-            </section>
-            <section>
-               <h3>Glitch.com - "Demo Project"</h3>
-               <img height="50%" width="50%s" src="asset/glitch.png"></img>
-               <p style="text-align: left; "> Demo : <a href="https://damskii-aframe-xr-gltf.glitch.me/" target="_blank">https://damskii-aframe-xr-gltf.glitch.me/</a></p>
-               <p style="text-align: left; "> Demo (project): <a href="https://glitch.com/~damskii-aframe-xr-gltf" target="_blank">https://glitch.com/~damskii-aframe-xr-gltf</a></p>
-               <p style="text-align: left; ">On IOS? <a href="https://apps.apple.com/us/app/webxr-viewer/id1295998056" target="_blank">Get viewer app for WebXR</a></p>
-            </section>
-            <!-------------------------------------------------------------------------->
-            <!--what re the tools-------->
-            <section data-background-iframe="https://threejs.org/examples/webgl_panorama_equirectangular.html" data-background-interactive>
-               <h3 style="">
-                  <span class="element">Week 1 - Task</span>
-               </h3>
-               <p style="text-align: left;  "> 1. create account for glitch.com</p>
-               <p style="text-align: left; "> 2. open your browser and the aframe starter project : https://glitch.com/~aframe </p>
-               <p style="text-align: left; "> 3. 'remix' this project and make your own copy </p>
-               <p style="text-align: left; "> 4. edit some of the aframe markup and change the sizes and positions of the objects</p>
-            </section>
-            <section>
-               <h3>
-                  Thank you - see you next time (谢谢)
-               </h3>
-               <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
-            </section>
-            <!--WEEK 2 -------->
-            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
-               <div>
-                  <h1>Design Tools For Web3D/XR</h1>
-                  <h3>Week 2 - AFRAME introduction</h3>
-                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
-               </div>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 2 - AFRAME introduction
-               </h3>
-               <h4>Overview</h4>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> provides easy-to-use HTML elements for starters called primitives.</p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> show how to modify basic meshes through HTML attributes </p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> to learn how to change colors, positions, rotations, scale</p>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 2 - AFRAME introduction
-               </h3>
-               <h4>Primitives</h4>
-               <img height="50%" width="50%s" src="asset/w2/hellowebvr.jpg"></img>
-               <img height="50%" width="50%s" src="asset/w2/hellowebvr2.jpg"></img>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 2 - AFRAME introduction
-               </h3>
-               <h4>Position</h4>
-               <p style="text-align: left; color:white; "></p>
-               <img height="50%" width="50%s" src="asset/w2/hellowebvr2.jpg"></img></p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> Position defines where objects are in 3D space (X, Y, Z) in meters.</p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> Change the position of the objects via the position HTML attribute values.</p>
-               <a  href="https://aframe.io/docs/master/components/position.html" target="_blank">AFRAME documentation - position</a>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 2 - AFRAME introduction
-               </h3>
-               <h4>Rotation</h4>
-               <p style="text-align: left; color:white; "></p>
-               <img height="50%" width="50%s" src="asset/w2/hellowebvr2.jpg"></img></p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> Rotation defines orientation of objects in 3D space (about the X, Y, Z axes) in degrees</p>
-               <a  href="https://aframe.io/docs/master/components/rotation.html" target="_blank">AFRAME documentation - rotation</a>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 2 - AFRAME introduction
-               </h3>
-               <h4>Adding Primitives</h4>
-               <img height="50%" width="50%s" src="asset/w2/hellowebvr2.jpg"></img>
-               <p style="text-align: center; color:white; ">  Add primitives the scene by adding HTML elements under 'a-scene' </p>
-               <a  href="https://aframe.io/docs/0.5.0/introduction/html-and-primitives.html" target="_blank">AFRAME documentation - primitives</a>
-            </section>
-            <!--what re the tools-------->
-            <section data-background-iframe="https://threejs.org/examples/webgl_materials_envmaps.html" data-background-interactive>
-               <h3 style="">
-                  <span class="element">Week 2 - Task</span>
-               </h3>
-               <p style="text-align: left;  "> 1. got to aframe.io and click GET STARTED</p>
-               <p style="text-align: left; "> 2. select 'remix the starter example on Glitch' link to open the link : https://glitch.com/~aframe </p>
-               <p style="text-align: left; "> 3. select 'remix your own' to create your own copy </p>
-               <p style="text-align: left; "> 4. change the 'position' and 'rotation' and 'color' values of each of the primitives to create your own scene </p>
-               <p style="text-align: left; "> 4. add other primitives by copying any of the primitives eg 'a-box' </p>
-            </section>
-            <section>
-               <h3>
-                  Thank you - see you next time (谢谢)
-               </h3>
-               <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
-            </section>
-            <!--WEEK 3 -------->
-            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
-               <div>
-                  <h1>Design Tools For Web3D/XR</h1>
-                  <h3>Week 3 - Rendering a 360 image in AFRAME</h3>
-                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
-               </div>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 3 - AFRAME Rendering a 360 image
-               </h3>
-               <h4>Remix the example on Glitch</h4>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> Use your browser to open the URL: https://glitch.com/~damskii-aframe-360</p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> Select REMIX YOUR OWN on the bottom right hand side</p>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 3 - AFRAME Rendering a 360 image
-               </h3>
-               <h4>Get a 360 image</h4>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> One you have created</p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> Or download from a free site - eg. https://pixexid.com/search/360</p>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 3 - AFRAME Rendering a 360 image
-               </h3>
-               <h4>Uploading the ASSET to Glitch</h4>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> Within the GLITCH example, select the ASSETS tab and UPLOAD AN ASSET.</p>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 3 - AFRAME Rendering a 360 image
-               </h3>
-               <h4>Select the URL for the ASSET</h4>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> In the ASSETS tab, click once on the preview image </p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> In the bottom left side, select COPY URL </p>
-            </section>
-            <section>
-               <h3 style="color:white; ">
-                  Week 3 - AFRAME Rendering a 360 image
-               </h3>
-               <h4>Select the URL to the index.html file</h4>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> look for the 'a-sky' primitive on like 14. </p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> in the 'src' field, delete existing link between the quotes "" </p>
-               <p style="text-align: left; color:white; "><span>&#8226;</span> between the quotes "" paste the URL from your clipboard</p>
-            </section>
-            <!--TASK-------->
-            <section data-background-iframe="https://threejs.org/examples/webgl_materials_envmaps.html" data-background-interactive>
-               <h3 style="">
-                  <span class="element">Week 3 - Task</span>
-               </h3>
-               <p style="text-align: left;  "> 1. Use your browser to open the URL: https://glitch.com/~damskii-aframe-360</p>
-               <p style="text-align: left; "> 2. Within the GLITCH example, select the ASSETS tab and UPLOAD AN ASSET. </p>
-               <p style="text-align: left; "> 3. In the ASSETS tab, click once on the preview image and select COPY URL</p>
-               <p style="text-align: left; "> 4. look for the 'a-sky' primitive on line 14, in the 'src' field, delete existing link between the quotes "" </p>
-               <p style="text-align: left; "> 5. between the quotes of the 'a-sky' src "" paste the URL from your clipboard </p>
-            </section>
-            <section>
-               <h3>
-                  Thank you - see you next time (谢谢)
-               </h3>
-               <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
-            </section>
+
+
+
+
             <!--TO DOOOOO -------->  
          </div>
       </div>
