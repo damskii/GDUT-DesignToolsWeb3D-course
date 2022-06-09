@@ -26,181 +26,6 @@
    <body>
       <div class="reveal">
          <div class="slides">
-            <!--work------------------------------------------------------------------------------------------------------------------------------------------------------->
-          
-  
-               
-            <!--WEEK 9 -------->
-            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
-               <div>
-                  <h1>Design Tools For Web3D/XR</h1>
-                  <h3>Week 9 - Introduction to Shaders </h3>
-                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
-               </div>
-            </section>
-
-            <!--shader intro -->
-            <section data-background-iframe="https://threejs.org/examples/webgl_gpgpu_birds.html" data-background-interactive>
-               <h3 >
-                  What is a Shader?
-               </h3>
-               <p style="text-align: left; color: #000000;">
-                  A shader is a program that runs on the GPU (the graphic card) of our computer and it’s mostly used to modify the appearance of 3D objects, create light effects for virtual scenes and process images. Shaders perform those task in a very fast and efficient way.
-               </p>
-            </section>
-            <section data-background-iframe="https://threejs.org/examples/webgl_postprocessing_godrays.html" data-background-interactive>
-               <h3 >
-               </h3>
-               <p style="text-align: left; color: #000000;">
-                  A single shader is actually composed by two programs: a vertex shader and a fragment shader.
-               </p>
-            </section>
-            <section data-background-iframe="https://threejs.org/examples/webgl_gpgpu_protoplanet.html" data-background-interactive>
-               <h3 >
-               </h3>
-               <p style="text-align: left; ">
-                  On every frame the GPU runs a tiny program called a vertex shader on every single vertex in the geometry. This tiny program calculates the final position of vertexes on the screen then sends them on to a second tiny program called a fragment shader.
-               </p>
-            </section>
-            <section data-background-iframe="https://threejs.org/examples/webgl_marchingcubes.html" data-background-interactive>
-               <h3 >
-               </h3>
-               <p style="text-align: left; ">
-                  The fragment shader is run on every single fragment (pixel) of the final picture on screen. This tiny program calculates the final color of each pixel based on textures, lighting, and other settings.
-               </p>
-            </section>
-            <section data-background-iframe="https://threejs.org/examples/webgl_lights_hemisphere.html" data-background-interactive>
-               <h3 >
-               </h3>
-               <p style="text-align: left; color: #000000;">
-                  Uniforms are sent to both vertex shaders and fragment shaders and contain values that stay the same across the entire frame being rendered. A good example of this might be a light’s position.
-               </p>
-            </section>
-            <section data-background-iframe="https://threejs.org/examples/webgl_buffergeometry_custom_attributes_particles.html" data-background-interactive>
-               <h3 >
-               </h3>
-               <p style="text-align: left; ">
-                  Attributes are values that are applied to individual vertices. Attributes are only available to the vertex shader. This could be something like each vertex having a distinct colour. Attributes have a one-to-one relationship with vertices.
-               </p>
-            </section>
-            <!--basic -->
-            <section >
-               <a href="https://thebookofshaders.com" target="_blank">Book of Shaders</a>
-               <p style="" >.....interesting site on shaders</p>
-            </section>
-            <section >
-               <a href="https://thebookofshaders.com/02/" target="_blank">Book of Shaders - Intro</a>
-               <p style="" >.....intro section</p>
-            </section>
-           
-            <!--Directional Light and Sphere Normals -->
-            <section >
-               <a href="" target="_blank">Directional Light and Sphere Normals</a>
-               <p style="text-align: left;" >
-               </p>
-               <img src = "asset/lightdirection.png"></img>
-            </section>
-            <section >
-               <a href="" target="_blank">Directional Light and Sphere Normals</a>
-               <p style="text-align: left;" >
-                  The surface's facing direction at any point is called its surface normal. The surface normal is a vector that points in the direction the surface is facing.
-               </p>
-               <img src = "asset/sphere_normals.jpg"></img>
-            </section>
-            <section >
-               <a href="https://aerotwist.com/static/tutorials/an-introduction-to-shaders-part-2/demo/demo-2.html" target="_blank">Directional Light Shader</a>
-               <p style="text-align: left;" > We’ll update our Vertex Shader to provide each vertex normal to the Fragment Shader. We do this with a varying </p>
-               <img src = "asset/light0.png"></img>
-            </section>
-            <section >
-               <a href="https://aerotwist.com/static/tutorials/an-introduction-to-shaders-part-2/demo/demo-2.html" target="_blank">Directional Light Shader</a>
-               <p style="text-align: left;" >In the Fragment Shader we’re going to use the dot product of the vertex normal with a vector that represents a light shining from above and to the right of the sphere. The net result of this gives us an effect similar to a directional light in a 3D package. </p>
-               <img src = "asset/light1.png"></img>
-            </section>
-            <section >
-               <a href="https://aerotwist.com/static/tutorials/an-introduction-to-shaders-part-2/demo/demo-2.html" target="_blank">Directional Light Shader</a>
-               <p style="text-align: left;" >
-                  With normalised vectors, if they point in exactly the same direction, you get a value of 1. If they point in opposite directions you get a -1. What we do is take that number and apply it to our lighting. So a vertex in the top right will have a value near or equal to 1,
-               </p>
-               <img src = "asset/lambert1.gif"></img>
-            </section>
-
-            <section >
-               <h3 style="color:white; ">
-                   Week 9 - Introduction to Shaders
-               </h3>
-               <h4>ShaderFrog</h4>
-               <p style="text-align: center; color:white; ">  <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> </p>       
-            </section>
-
-            <section >
-               <h3 style="color:white; ">
-                   Week 9 - Introduction to Shaders
-               </h3>
-               <h4>ShaderFrog - Create an Account</h4>
-               <p style="text-align: center; color:white; ">  <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> </p>       
-            </section>
-
-            <section >
-               <h3 style="color:white; ">
-                   Week 9 - Introduction to Shaders
-               </h3>
-               <h4>ShaderFrog - Create a Shader</h4>
-               <p style="text-align: center; color:white; ">  <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> </p>       
-            </section>
-
-            <section >
-               <h3 style="color:white; ">
-                   Week 9 - Introduction to Shaders
-               </h3>
-               <h4>ShaderFrog - Export a Shader</h4>
-               <p style="text-align: center; color:white; ">  <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> </p>       
-            </section>
-             
-            <section>
-               <h3 style="color:white; ">
-                  Week 9 - Introduction to Shaders
-               </h3>
-               <h4>Remix the example</h4>
-               <p style="text-align: center; color:white; ">  <a href="https://glitch.com/~damskii-aframe-shaderfrog" target="_blank">https://glitch.com/~damskii-aframe-shaderfrog</a> </p>
-            </section>
-
-            <section>
-               <h3 style="color:white; ">
-                  Week 9 - Introduction to Shaders
-               </h3>
-               <h4>Add the JSON code</h4>
-               <p style="text-align: left; color:white; ">1.  Select the 'default.json' file on the left hand side menu  </p>
-               <p style="text-align: left; color:white; ">2.  Open the exported JSON in a text editor  </p>
-               <p style="text-align: left; color:white; ">3.  Copy and Paste the JSON code into the 'default.json', replacing the code </p>
-            </section>
-
-
-            <section>
-               <h3 style="color:white; ">
-                  Week 9 - Introduction to Shaders
-               </h3>
-               <h4>Study your example</h4>
-               <p style="text-align: center; color:white; ">Have a look at the index.html and recognise the aframe code to use in other projects</p>
-            </section>
-
-         
-          <!--TASK-------->
-          <section data-background-iframe="https://damskii-aframe-shaderfrog.glitch.me/" data-background-interactive>
-            <h3 style="">
-               <span style="color:white " class="element">Week 9 - Task</span>
-            </h3>
-            <p style="text-align: left; color:white "> 1. Use your browser to open the URL: <a href="https://glitch.com/~damskii-aframe-shaderfrog" target="_blank">https://glitch.com/~damskii-aframe-shaderfrog</a> and REMIX to make your own copy</p>
-            <p style="text-align: left; color:white  "> 2. Visit <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> and create your own shader </p>
-            <p style="text-align: left; color:white  "> 3. Export the shader from ShaderFrog, then copy/paste the JSON into your project </p>
-            <a href="https://damskii-aframe-shaderfrog.glitch.me/" target="_blank">https://damskii-aframe-shaderfrog.glitch.me/</a>
-         </section>
-         <section>
-            <h3>
-               Thank you - see you next time (谢谢)
-            </h3>
-            <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
-         </section>
 
             <!-- INIT-->
             <div id="perma-footer" class="footer">
@@ -215,8 +40,8 @@
             </div>
 
 
-
-
+            <!--work------------------------------------------------------------------------------------------------------------------------------------------------------->
+          
                <!--WEEK 10 -------->
                <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
                   <div>
@@ -226,48 +51,80 @@
                   </div>
                </section>
 
- 
-            <section>
-               <h3 style="color:white; ">
-                  Week 10 - AFRAME - AR Location Marker
-               </h3>
-               <h4>Add the JSON code</h4>
-               <p style="text-align: left; color:white; ">1.  Select the 'default.json' file on the left hand side menu  </p>
-               <p style="text-align: left; color:white; ">2.  Open the exported JSON in a text editor  </p>
-               <p style="text-align: left; color:white; ">3.  Copy and Paste the JSON code into the 'default.json', replacing the code </p>
-            </section>
+
+               <section>
+                  <h3 style="color:white; ">
+                     Week 10 - AFRAME - AR Location Marker
+                  </h3>
+                  <h4>Remix the example on Glitch</h4>
+                  <p style="text-align: left; color:white; "><span>&#8226;</span> Use your browser to open the URL: https://glitch.com/~aframe-location-marker</p>
+                  <p style="text-align: left; color:white; "><span>&#8226;</span> Select REMIX YOUR OWN on the bottom right hand side</p>
+               </section>
+
+               <section>
+                  <h3 style="color:white; ">
+                     Week 10 - AFRAME - AR Location Marker
+                  </h3>
+                  <h4>Creating/Importing a GLTF file</h4>
+                  <p style="text-align: center; color:white; ">  Lets download a GLTF file from SKETCHFAB </p>
+                  <p style="text-align: center; color:white; "> Going to a download free UFO model - https://sketchfab.com/3d-models/ufo-f7ac46de718a444384a73e953d49997c  </p>
+                  <p style="text-align: center; color:white; "> 
+                     This work is based on "UFO"  by Graphfun (https://sketchfab.com/the_3d_animate_guy) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+                  </p>
+               </section>
+
+               
+               <section>
+                  <h3 style="color:white; ">
+                     Week 8 - AFRAME - 3D assets, animations and effects
+                  </h3>
+                  <h4>Create the GLB using this link</h4>
+                  <p style="text-align: center; color:white; ">  <a href="https://sbtron.github.io/makeglb/" target="_blank">https://sbtron.github.io/makeglb/</a>  </p>
+               </section>
+
+               <section>
+                  <h3 style="color:white; ">
+                     Week 10 - AFRAME - AR Location Marker
+                  </h3>
+                  <h4>Uploading the ASSET to Glitch</h4>
+                  <p style="text-align: left; color:white; "><span>&#8226;</span> Within the GLITCH example, select the ASSETS tab and UPLOAD AN ASSET.</p>
+               </section>
+
+               <section>
+                  <h3 style="color:white; ">
+                     Week 10 - AFRAME - AR Location Marker
+                  </h3>
+                  </h3>
+                  <h4>get lat/long coordinates from GPS map application</h4>
+               </section>
+
+               <section>
+                  <h3 style="color:white; ">
+                     Week 10 - AFRAME - AR Location Marker
+                  </h3>
+                  </h3>
+                  <h4>input lat/long coordinates from GPS map application</h4>
+               </section>
+
+               <section>
+                  <h3 style="color:white; ">
+                     Week 10 - AFRAME - AR Location Marker
+                  </h3>
+                  </h3>
+                  <h4>go to location and see results!</h4>
+               </section>
 
 
-            <section>
-               <h3 style="color:white; ">
-                  Week 10 - AFRAME - AR Location Marker
-               </h3>
-               </h3>
-               <h4>add scene effects - fog</h4>
-               <p style="text-align: center; color:white; ">  add 'fog="type: exponential; density: 0.12; color: #696969;"' to a-scene </p>
-            </section>
-
-            <section>
-               <h3 style="color:white; ">
-                  Week 10 - AFRAME - AR Location Marker
-               </h3>
-               </h3>
-               <h4>add scene effects - background animation</h4>
-               <p style="text-align: center; color:white; ">  add 'animation="property: fog.color; dur: 7000;from: #696969; to: #fff;loop: true; dir: alternate"' to a-scene </p>
-            </section>
-   
 
             <!--TASK-------->
-            <section data-background-iframe="https://damskii-aframe-xr-gltf-animation.glitch.me/" >
+            <section  >
                <h3 style="">
-                  <span style="color:black " class="element">Week 10 - Task</span>
+                  <span style="color:white " class="element">Week 10 - Task</span>
                </h3>
-               <p style="text-align: left; color:black "> 1. Use your browser to open the URL: <a href="https://glitch.com/~damskii-aframe-xr-gltf-animation-work-file" target="_blank">https://damskii-aframe-xr-gltf-animation-work-file</a> and REMIX to make your own copy</p>
-               <p style="text-align: left; color:black "> 2. Open another tab to see the finished scene URL: <a href="https://glitch.com/~damskii-aframe-xr-gltf-animation" target="_blank">https://damskii-aframe-xr-gltf-animation</a> </p>
-               <p style="text-align: left; color:black  "> 3. Add your own model to the scene or get the drone from SKETCHFAB, download and create a GLB  </p>
-               <p style="text-align: left; color:black  "> 4. Add the animations and effects, copy and paste from the finished scene to your scene </p>
-               <p style="text-align: left; color:black  "> 5. Modify the colours and effects however you wish to create a unique scene </p>
-               <a href="https://damskii-aframe-xr-gltf-animation.glitch.me/" target="_blank">https://damskii-aframe-xr-gltf-animation.glitch.me/</a>
+               <p style="text-align: left; color:white "> 1. Use your browser to open the URL: <a href="https://glitch.com/~aframe-location-marker" target="_blank">https://glitch.com/~aframe-location-marker</a> and REMIX to make your own copy</p>
+               <p style="text-align: left; color:white  "> 2. Add your own model to the scene or get the ufo from SKETCHFAB, download and create a GLB  </p>
+               <p style="text-align: left; color:white  "> 4. Add the lat/long coordinates from GPS map application </p>
+               <a href="https://aframe-location-marker.glitch.me/" target="_blank">https://aframe-location-marker.glitch.me/</a>
             </section>
             <section>
                <h3>
@@ -275,38 +132,6 @@
                </h3>
                <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
             </section>
-
-
-
-
-            <section>
-               <h3 style="color:white; ">
-                  Week 10 - Introduction to Shaders
-               </h3>
-               <h4>Study your example</h4>
-               <p style="text-align: center; color:white; ">Have a look at the index.html and recognise the aframe code to use in other projects</p>
-            </section>
-
-         
-          <!--TASK-------->
-          <section data-background-iframe="https://damskii-aframe-shaderfrog.glitch.me/" data-background-interactive>
-            <h3 style="">
-               <span style="color:white " class="element">Week 9 - Task</span>
-            </h3>
-            <p style="text-align: left; color:white "> 1. Use your browser to open the URL: <a href="https://glitch.com/~damskii-aframe-shaderfrog" target="_blank">https://glitch.com/~damskii-aframe-shaderfrog</a> and REMIX to make your own copy</p>
-            <p style="text-align: left; color:white  "> 2. Visit <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> and create your own shader </p>
-            <p style="text-align: left; color:white  "> 3. Export the shader from ShaderFrog, then copy/paste the JSON into your project </p>
-            <a href="https://damskii-aframe-shaderfrog.glitch.me/" target="_blank">https://damskii-aframe-shaderfrog.glitch.me/</a>
-         </section>
-         <section>
-            <h3>
-               Thank you - see you next time (谢谢)
-            </h3>
-            <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
-         </section>
-
-
-
 
 
             
@@ -1072,7 +897,180 @@
                </h3>
                <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
             </section>
-            <!--end work---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            
+               
+            <!--WEEK 9 -------->
+            <section data-background-iframe="https://paveldogreat.github.io/WebGL-Fluid-Simulation" data-background-interactive>
+               <div>
+                  <h1>Design Tools For Web3D/XR</h1>
+                  <h3>Week 9 - Introduction to Shaders </h3>
+                  <p style="text-align: centre; color:white; ">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</p>
+               </div>
+            </section>
+
+            <!--shader intro -->
+            <section data-background-iframe="https://threejs.org/examples/webgl_gpgpu_birds.html" data-background-interactive>
+               <h3 >
+                  What is a Shader?
+               </h3>
+               <p style="text-align: left; color: #000000;">
+                  A shader is a program that runs on the GPU (the graphic card) of our computer and it’s mostly used to modify the appearance of 3D objects, create light effects for virtual scenes and process images. Shaders perform those task in a very fast and efficient way.
+               </p>
+            </section>
+            <section data-background-iframe="https://threejs.org/examples/webgl_postprocessing_godrays.html" data-background-interactive>
+               <h3 >
+               </h3>
+               <p style="text-align: left; color: #000000;">
+                  A single shader is actually composed by two programs: a vertex shader and a fragment shader.
+               </p>
+            </section>
+            <section data-background-iframe="https://threejs.org/examples/webgl_gpgpu_protoplanet.html" data-background-interactive>
+               <h3 >
+               </h3>
+               <p style="text-align: left; ">
+                  On every frame the GPU runs a tiny program called a vertex shader on every single vertex in the geometry. This tiny program calculates the final position of vertexes on the screen then sends them on to a second tiny program called a fragment shader.
+               </p>
+            </section>
+            <section data-background-iframe="https://threejs.org/examples/webgl_marchingcubes.html" data-background-interactive>
+               <h3 >
+               </h3>
+               <p style="text-align: left; ">
+                  The fragment shader is run on every single fragment (pixel) of the final picture on screen. This tiny program calculates the final color of each pixel based on textures, lighting, and other settings.
+               </p>
+            </section>
+            <section data-background-iframe="https://threejs.org/examples/webgl_lights_hemisphere.html" data-background-interactive>
+               <h3 >
+               </h3>
+               <p style="text-align: left; color: #000000;">
+                  Uniforms are sent to both vertex shaders and fragment shaders and contain values that stay the same across the entire frame being rendered. A good example of this might be a light’s position.
+               </p>
+            </section>
+            <section data-background-iframe="https://threejs.org/examples/webgl_buffergeometry_custom_attributes_particles.html" data-background-interactive>
+               <h3 >
+               </h3>
+               <p style="text-align: left; ">
+                  Attributes are values that are applied to individual vertices. Attributes are only available to the vertex shader. This could be something like each vertex having a distinct colour. Attributes have a one-to-one relationship with vertices.
+               </p>
+            </section>
+            <!--basic -->
+            <section >
+               <a href="https://thebookofshaders.com" target="_blank">Book of Shaders</a>
+               <p style="" >.....interesting site on shaders</p>
+            </section>
+            <section >
+               <a href="https://thebookofshaders.com/02/" target="_blank">Book of Shaders - Intro</a>
+               <p style="" >.....intro section</p>
+            </section>
+           
+            <!--Directional Light and Sphere Normals -->
+            <section >
+               <a href="" target="_blank">Directional Light and Sphere Normals</a>
+               <p style="text-align: left;" >
+               </p>
+               <img src = "asset/lightdirection.png"></img>
+            </section>
+            <section >
+               <a href="" target="_blank">Directional Light and Sphere Normals</a>
+               <p style="text-align: left;" >
+                  The surface's facing direction at any point is called its surface normal. The surface normal is a vector that points in the direction the surface is facing.
+               </p>
+               <img src = "asset/sphere_normals.jpg"></img>
+            </section>
+            <section >
+               <a href="https://aerotwist.com/static/tutorials/an-introduction-to-shaders-part-2/demo/demo-2.html" target="_blank">Directional Light Shader</a>
+               <p style="text-align: left;" > We’ll update our Vertex Shader to provide each vertex normal to the Fragment Shader. We do this with a varying </p>
+               <img src = "asset/light0.png"></img>
+            </section>
+            <section >
+               <a href="https://aerotwist.com/static/tutorials/an-introduction-to-shaders-part-2/demo/demo-2.html" target="_blank">Directional Light Shader</a>
+               <p style="text-align: left;" >In the Fragment Shader we’re going to use the dot product of the vertex normal with a vector that represents a light shining from above and to the right of the sphere. The net result of this gives us an effect similar to a directional light in a 3D package. </p>
+               <img src = "asset/light1.png"></img>
+            </section>
+            <section >
+               <a href="https://aerotwist.com/static/tutorials/an-introduction-to-shaders-part-2/demo/demo-2.html" target="_blank">Directional Light Shader</a>
+               <p style="text-align: left;" >
+                  With normalised vectors, if they point in exactly the same direction, you get a value of 1. If they point in opposite directions you get a -1. What we do is take that number and apply it to our lighting. So a vertex in the top right will have a value near or equal to 1,
+               </p>
+               <img src = "asset/lambert1.gif"></img>
+            </section>
+
+            <section >
+               <h3 style="color:white; ">
+                   Week 9 - Introduction to Shaders
+               </h3>
+               <h4>ShaderFrog</h4>
+               <p style="text-align: center; color:white; ">  <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> </p>       
+            </section>
+
+            <section >
+               <h3 style="color:white; ">
+                   Week 9 - Introduction to Shaders
+               </h3>
+               <h4>ShaderFrog - Create an Account</h4>
+               <p style="text-align: center; color:white; ">  <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> </p>       
+            </section>
+
+            <section >
+               <h3 style="color:white; ">
+                   Week 9 - Introduction to Shaders
+               </h3>
+               <h4>ShaderFrog - Create a Shader</h4>
+               <p style="text-align: center; color:white; ">  <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> </p>       
+            </section>
+
+            <section >
+               <h3 style="color:white; ">
+                   Week 9 - Introduction to Shaders
+               </h3>
+               <h4>ShaderFrog - Export a Shader</h4>
+               <p style="text-align: center; color:white; ">  <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> </p>       
+            </section>
+             
+            <section>
+               <h3 style="color:white; ">
+                  Week 9 - Introduction to Shaders
+               </h3>
+               <h4>Remix the example</h4>
+               <p style="text-align: center; color:white; ">  <a href="https://glitch.com/~damskii-aframe-shaderfrog" target="_blank">https://glitch.com/~damskii-aframe-shaderfrog</a> </p>
+            </section>
+
+            <section>
+               <h3 style="color:white; ">
+                  Week 9 - Introduction to Shaders
+               </h3>
+               <h4>Add the JSON code</h4>
+               <p style="text-align: left; color:white; ">1.  Select the 'default.json' file on the left hand side menu  </p>
+               <p style="text-align: left; color:white; ">2.  Open the exported JSON in a text editor  </p>
+               <p style="text-align: left; color:white; ">3.  Copy and Paste the JSON code into the 'default.json', replacing the code </p>
+            </section>
+
+
+            <section>
+               <h3 style="color:white; ">
+                  Week 9 - Introduction to Shaders
+               </h3>
+               <h4>Study your example</h4>
+               <p style="text-align: center; color:white; ">Have a look at the index.html and recognise the aframe code to use in other projects</p>
+            </section>
+
+         
+          <!--TASK-------->
+          <section data-background-iframe="https://damskii-aframe-shaderfrog.glitch.me/" data-background-interactive>
+            <h3 style="">
+               <span style="color:white " class="element">Week 9 - Task</span>
+            </h3>
+            <p style="text-align: left; color:white "> 1. Use your browser to open the URL: <a href="https://glitch.com/~damskii-aframe-shaderfrog" target="_blank">https://glitch.com/~damskii-aframe-shaderfrog</a> and REMIX to make your own copy</p>
+            <p style="text-align: left; color:white  "> 2. Visit <a href="https://shaderfrog.com" target="_blank">https://shaderfrog.com</a> and create your own shader </p>
+            <p style="text-align: left; color:white  "> 3. Export the shader from ShaderFrog, then copy/paste the JSON into your project </p>
+            <a href="https://damskii-aframe-shaderfrog.glitch.me/" target="_blank">https://damskii-aframe-shaderfrog.glitch.me/</a>
+         </section>
+         <section>
+            <h3>
+               Thank you - see you next time (谢谢)
+            </h3>
+            <p style="text-align: centre;  "><a href="https://damskii.github.io/GDUT-DesignToolsWeb3D-course" target="_blank">https://damskii.github.io/GDUT-DesignToolsWeb3D-course</a></p>
+         </section>
+
 
 
 
